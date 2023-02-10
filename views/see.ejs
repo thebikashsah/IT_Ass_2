@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title> IT Lab Assignment- 2</title>
+</head>
+<body>
+
+     <hr style="border: 1px solid rgb(99, 236, 7);">
+    <div class="center">
+        <h1 style="color: rgb(99, 236, 7);"> Welcome to IT Lab Assignment 2</h1>
+    </div>
+    <hr style="border: 1px solid rgb(99, 236, 7);">
+
+<!-- <div class="center" id="show_text">
+    <h1 style="color: rgb(99, 236, 7);"> Text Data </h1>
+     
+    
+    <hr style="border: 1px solid rgb(239, 244, 236);width:20%; ">
+
+    <ul style="color: rgb(99, 236, 7);">
+        <% for(var i=0;i<lists.length-1;i++){ %>
+            <li><%= lists[i] %></li>
+        <% } %>
+     </ul>
+
+</div> -->
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <h1 style="color: rgb(99, 236, 7);">Text Data</h1>
+    <ul style="list-style-type: none;">
+      <% for(var i=0;i<lists.length-1;i++){ %>
+        <li style="margin: 10px 0; font-size: 20px; color:rgb(253, 220, 5)">
+          <%= lists[i] %>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+  
+<hr style="border: 1px solid rgb(99, 236, 7);">
+<div class="center" id="show_img">
+    <h1 style="color: rgb(99, 236, 7);"> Image Data </h1>
+    <hr style="border: 1px solid rgb(239, 244, 236);width:20%; ">
+
+    <!-- <ul style="color: rgb(99, 236, 7);">
+        <% for(var i=0;i<lists2.length;i++){ %>
+            <li><img src=" <%= lists2[i] %> " alt="Image not found" width="200" height="200"></li>
+        <% } %>
+     </ul> -->
+     <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <% for(var i=0;i<lists2.length;i++){ %>
+          <div style="margin: 10px;">
+            <img src="<%= lists2[i] %>" alt="Image not found" width="200" height="200">
+          </div>
+        <% } %>
+      </div>
+      
+
+     <!-- <img src="/data/img_data/Darjeeling_3.png" alt=""> -->
+
+</div>
+
+
+
+<footer >
+    <hr style="border: 1px solid rgb(99, 236, 7);">
+    <div class="center">
+        <h3 style="color: rgb(99, 236, 7);">Made by: Bikash Sah</h3>
+        <h3 style="color: rgb(99, 236, 7);">UG-3, CSE Department,  Jadavpur University</h3>
+        <!-- <h3 style="color: rgb(99, 236, 7);"> CSE Department,  Jadavpur University</h3> -->
+
+    </div>
+    <hr style="border: 1px solid rgb(99, 236, 7);">
+</footer>
+</html>

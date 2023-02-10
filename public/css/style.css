@@ -1,0 +1,49 @@
+
+body {
+    background-color: black;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+input[type="text"], input[type="file"] {
+    width: 75%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+
+button[type="submit"] {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+hr {
+    width: 80%;
+    margin-bottom: 2rem;
+
+    border: 1px solid rgb(99, 236, 7);
+}
+
+
+ 
